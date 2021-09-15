@@ -1,0 +1,39 @@
+{%extends "base.html"%}
+{%block title %}Blog{%endblock title%}
+{%block blogactive %}active{%endblock blogactive%}
+{%block body%}
+<div class="container">
+    <h1 class="my-3 text-center">Welcome To Programming Blog</h1>
+    {%for blog in blog%}
+
+    <div class="my-2">
+
+        <h3 class="mt-0"><a href="/blogpost/{{blog.slug}}">{{blog.title}}</a> </h3>
+        <div>
+            {{blog.content | slice:250 | safe}}...
+        </div>
+        <div class="class text-center">
+        <a href="/blogpost/{{blog.slug}}"><button type="button" class="btn btn-success my-2">Read More..</button></a>
+        </div>
+    </div>
+
+   {%endfor%}
+
+<!--
+<div class="my-3">
+    {%if prev%}
+    <button class="btb btn-primary"><a class="text-light" href="/blog?page={{prev}}"> &laquo; Previous</a></button>
+    {%else%}
+    <button class="btb btn-primary"><a class="text-light" href="#"> &laquo; Previous</a></button>
+    {%endif%}
+
+    {%if nxt%}
+    <button class="btb btn-primary float-right"><a class="text-light" href="/blog?page={{nxt}}">Next &raquo;</a></button>
+    {%else%}
+    <button class="btb btn-primary float-right"><a class="text-light" href="#">Next &raquo;</a></button>
+    {%endif%}
+</div>
+-->
+</div>
+
+{%endblock body%}

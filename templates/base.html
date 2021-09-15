@@ -16,7 +16,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/">Virtual Employee</a>
+            <a class="navbar-brand" href="/">Embedded Team</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -26,40 +26,50 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link {%block homeactive %} {%endblock homeactive%}" aria-current="page"
-                            href="/">Home</a>
+                            href="/">Desktop App</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {%block aboutactive %} {%endblock aboutactive%}" href="/about">About</a>
+                        <a class="nav-link {%block aboutactive %} {%endblock aboutactive%}" href="/python">Python</a>
                     </li>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {%block projectactive %} {%endblock projectactive%}"
-                            href="/project">Projects</a>
+                            href="/java">Java</a>
+                    </li>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {%block contactactive %} {%endblock contactactive%}"
-                            href="/contact">Contact</a>
+                        <a class="nav-link {%block blogactive %} {%endblock blogactive%}" href="/blog">Blog</a>
                     </li>
-                    <!--
+                     <!--
+                    <li class="nav-item">
+                        <a class="nav-link {%block contactactive %} {%endblock contactactive%}" href="/contact">Contact</a>
+                    </li>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a class="nav-link {%block mobileactive %} {%endblock mobileactive%}"
+                            href="#">Desktop App Development</a>
+                    </li>
+                    -->
+                    
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            Services
+                            Embedded
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Embedded</a></li>
-                            <li><a class="dropdown-item" href="#">Python</a></li>
-
-                            <li><a class="dropdown-item" href="#">PCB Designing</a></li>
+                            <li><a class="dropdown-item" href="/embeddedHardware">Embedded Hardware</a></li>
+                            <li><a class="dropdown-item" href="/embeddedFirmware">Embedded Firmware</a></li>
                         </ul>
-                        -->
+                        
                 </ul>
-                
+
                 <form class="d-flex" action=" " method='GET'>
-                    <input class="form-control me-2" type="text" id="search_box" name="search_box" placeholder="Search" aria-label="Search">
+                    <input class="form-control me-2" type="text" id="search_box" name="search_box" placeholder="Search"
+                        aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
-                
+
             </div>
         </div>
     </nav>
