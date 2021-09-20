@@ -1,30 +1,34 @@
 {%extends "base.html"%}
+{%load static%}
 {%block title %} Java {%endblock title%}
 {%block projectactive %}active{%endblock projectactive%}
 {%block body%}
 <div class="container my-3">
-    <h2 class="text-center my-3">Our Java Projects</h2>
-    <div class="row">
+    <h2 class="text-center my-3 shadow-none p-3 mb-5 bg-light rectangular">Our Java Projects</h2>
+    <div class="row shadow-lg p-3 mb-5 bg-white rounded">
         <div class="col md4">
-            <div class="card" style="width: 18rem;">
-                <img src="https://source.unsplash.com/500x300/?employee" class="card-img-top" alt="...">
+            <div class="container shadow p-3 mb-5 bg-light rounded" style="width: 72rem;">
+                <img src="{% static 'images/embedded1.jpeg'%}" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Android software development</h5>
+                    <h3 class="card-title text-center py-2 ">Android software development</h3>
                     <p class="card-text">The Android software development kit (SDK) includes a comprehensive set of
                         development tools. The Android SDK Platform Tools are a separately downloadable subset of the
                         full SDK, consisting of command-line tools such as adb and fastboot. The Android Debug Bridge
                         (ADB) is a tool to run commands on a connected Android device. Fastboot is a protocol used for
                         flashing filesystems. Code written in C/C++ can be compiled to ARM, or x86 native code (or their
-                        64-bit variants) using the Android Native Development Kit (NDK).</p>
+                        64-bit variants) using the Android Native Development Kit (NDK).
+
+
+
 
                 </div>
             </div>
         </div>
         <div class="col md4">
-            <div class="card" style="width: 18rem;">
-                <img src="https://source.unsplash.com/500x300/?it,html,Java" class="card-img-top" alt="...">
+            <div class="container shadow p-3 mb-5 bg-light rounded" style="width: 72rem;">
+                <img src="{% static 'images/java2.jpeg'%}" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Data Visualization Software</h5>
+                    <h3 class="card-title text-center py-2">Data Visualization Software</h3>
                     <p class="card-text">The presentation creation and visual representation of data in the graphical or
                         pictorial format are referred to as Data Visualization. Data Visualization has become an active
                         field of research & development by being closely related to information graphics and
@@ -37,13 +41,13 @@
             </div>
         </div>
         <div class="col md4">
-            <div class="card" style="width: 18rem;">
-                <img src="https://source.unsplash.com/500x300/?Design,javascript" class="card-img-top" alt="...">
+            <div class="container shadow p-3 mb-5 bg-light rounded" style="width: 72rem;">
+                <img src="{% static 'images/java3.jpeg'%}" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Graphic Design and Animation</h5>
+                    <h3 class="card-title text-center py-2">Graphic Design and Animation</h3>
                     <p class="card-text">Our graphic design and multimedia services portfolio includes 2D and 3D
                         animation, 3D prototype and modeling, flash animation, animation storyboarding, animated
-                        illustrations, product animation, computer animation, and web animation. 
+                        illustrations, product animation, computer animation, and web animation.
 
                         Our animation applications include Flash MX, Illustrator, Photoshop, Maya, LigthWave 3D,
                         Dreamweaver, 3ds Max, Houdini, and Indesign etc. along with development software such as

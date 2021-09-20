@@ -1,21 +1,23 @@
 {%extends "base.html"%}
+{%load static%}
 {%block title %}python{%endblock title%}
 {%block aboutactive %}active{%endblock aboutactive%}
 {%block body%}
 <div class="container my-3">
-    <h2 class="text-center my-3">Python Projects</h2>
-    <div class="row">
+    <h2 class="text-center my-3 shadow-sm p-3 mb-5 bg-light rounded">Python Projects</h2>
+    <div class="row shadow-lg p-3 mb-5 bg-secondary rounded">
         <div class="col md4">
             <div class="card" style="width: 18rem;">
-                <img src="https://www.virtualemployee.co.in/photos/1/pages/company-profile.jpg" class="card-img-top"
-                    alt="...">
+                <img src="https://source.unsplash.com/500x300/?employee" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Automation</h5>
-                    <p class="card-text">We offer automatic control loop, a controller compares a measured value of a
-                        process with a desired set value and processes the resulting error signal to change some input
-                        to the process, in such a way that the process stays at its set point despite disturbances. This
-                        closed-loop control is an application of negative feedback to a system.</p>
-                    <a href="/blog" class="btn btn-primary">See Blog</a>
+                    <h3>Automation</h3>
+                    <p>We offer automatic control loop, a controller compares a measured value of a
+                        process with a desired set value and processes the resulting error signal to change some input<span id="dots">...</span><span id="more"> 
+                            to the process, in such a way that the process stays at its set point despite disturbances. This
+                            closed-loop control is an application of negative feedback to a system.</span></p>
+                      <button onclick="myFunction()" id="myBtn" class="btn btn-success">Read More... </button>
+                    
+                      <script src="{%static 'js/main.js' %}"></script>
                 </div>
             </div>
         </div>
@@ -23,26 +25,13 @@
             <div class="card" style="width: 18rem;">
                 <img src="https://source.unsplash.com/500x300/?code,html,Java" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Graphical user interface</h5>
-                    <p class="card-text">Designing the visual composition and temporal behavior of a GUI is an important
-                        part of software application programming in the area of human–computer interaction. Its goal is
-                        to enhance the efficiency and ease of use for the underlying logical design of a stored program,
-                        a design discipline named usability.</p>
-                    <a href="/blog" class="btn btn-primary">See Blog</a>
-                </div>
-            </div>
-        </div>
-        <div class="col md4">
-            <div class="card" style="width: 18rem;">
-                <img src="https://source.unsplash.com/500x300/?office usa" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Machine learning</h5>
-                    <p class="card-text">it is possible to program algorithms telling the machine how to execute all
-                        steps required to solve the problem at hand; on the computer's part, no learning is needed. For
-                        more advanced tasks, it can be challenging for a human to manually create the needed
-                        algorithms.it can turn out to be more effective to help the machine develop its own algorithm.
-                    </p>
-                    <a href="/blog" class="btn btn-primary">See Blog</a>
+                    <h3>Graphical User Interface (GUI)</h3>
+                    <p>We Designing the visual composition and temporal behavior of a GUI is an important
+                        part of software application programming in the area<span id="dots2">...</span><span id="more2">of human–computer interaction. Its goal is
+                            to enhance the efficiency and ease of use for the underlying logical design of a stored program,
+                            a design discipline named usability</span></p>
+                            <button onclick="myFunction2()" id="myBtn2" class="btn btn-success">Read More... </button>
+                      <script src="{%static 'js/main2.js' %}"></script>
                 </div>
             </div>
         </div>
@@ -50,20 +39,37 @@
             <div class="card" style="width: 18rem;">
                 <img src="https://source.unsplash.com/500x300/?javascript" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Web scraping</h5>
-                    <p class="card-text">The web scraping software may directly access the World Wide Web using the
-                        Hypertext Transfer Protocol or a web browser. While web scraping can be done manually by a
+                    <h3>Machine Learning</h3>
+                    <p>it is possible to program algorithms telling the machine how to execute all
+                        steps required to solve the problem at hand; on the computer's part, no learning is needed<span id="dots3">...</span><span id="more3">more advanced tasks, it can be challenging for a human to manually create the needed
+                            algorithms.it can turn out to be more effective to help the machine develop its own algorithms.</span></p>
+                            <button onclick="myFunction3()" id="myBtn3" class="btn btn-success">Read More... </button>
+                      <script src="{%static 'js/main3.js' %}"></script>
+                </div>
+            </div>
+        </div>
+        <div class="col md4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://source.unsplash.com/500x300/?linx,web,chip" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3>Web Scraping</h3>
+                    <p>The web scraping software may directly access the World Wide Web using the
+                        Hypertext Transfer Protocol or a web browser. While web scraping can be done<span id="dots4">...</span><span id="more4">emanually by a
                         software user, the term typically refers to automated processes implemented using a bot or web
-                        crawler. It is a form of copying in which specific data is gathered and copied from the web.</p>
-                    <a href="/blog" class="btn btn-primary">See Blog</a>
-
+                        crawler. It is a form of copying in which specific data is gathered and copied from the web.
+                            </span></p>
+                            <button onclick="myFunction4()" id="myBtn4" class="btn btn-success">Read More... </button>
+                      <script src="{%static 'js/main4.js' %}"></script>
                 </div>
             </div>
         </div>
     </div>
+    
 </div>
+<div class="container text-center py-3"><a href="{% url 'blog' %}" class="btn btn-primary">See Our Blogs</a></div>
+  <!--
 <div class="container my-3">
-    <!--
+  
     <div class="embed-responsive embed-responsive-421by9">
         <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=BjP-kftAl9Q">
 

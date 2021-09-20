@@ -39,7 +39,7 @@ def blog(request):
 def blogpost(request,slug):
     blog=Blog.objects.filter(slug=slug).first()
     return render(request,'blogpost.html',{'blog':blog})
-'''
+
 def contact(request):
     form=ContactForm()
     if request.method=='POST':
@@ -51,7 +51,7 @@ def contact(request):
 
     return render(request,'contact.html',{'form':form})
 
-'''
+
 def search_view(request):
       if request.method == 'GET':  
           search_text = request.GET.get("search_box", None)

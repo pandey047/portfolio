@@ -1,12 +1,14 @@
 {%extends "base.html"%}
+{%load static%}
 {%block title %} Embedded Firmware {%endblock title%}
 {%block body%}
-<div class="class text-center py-3"><h2>Embedded Hardware System</h2></div>
-<div class="container py-3">
+<div class="class text-center py-3 shadow-none p-3 mb-5 bg-light rounded">
+    <h1>Embedded Hardware System</h1></div>
+<div class="container py-3 shadow-lg p-3 mb-5 bg-white rounded">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="https://source.unsplash.com/800x300/?html,microprocessor" alt="First slide">
+            <img class="d-block w-100" src="{% static 'images/embedded5.png' %}" alt="First slide">
           </div>
           <div class="carousel-item">
             <img class="d-block w-100" src="..." alt="Second slide">
@@ -25,18 +27,19 @@
         </a>
       </div>
 </div>
-<div class="container my-4 text-center">
-    <h2 class="text-center my-4"> <li>Embedded Applications</li></h2>
-    <div class="row">
+<div class="container my-4 text-center shadow-none p-3 mb-5 bg-light rounded">
+    <h2 class="text-center my-4">Embedded Applications</h2>
+    <div class="row shadow-lg p-3 mb-5 bg-white rounded">
         <div class="col md4">
             <div class="card" style="width: 18rem;">
                 <img src="https://source.unsplash.com/500x300/?employee" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">MOBILE APP DEVELOPMENT</h5>
-                    <p class="card-text">Those with a creative flair and expertise in iOS, Android, Windows, Hybrid
-                        and Xamarin technologies have an exciting career opportunity in the area of mobile
-                        application and game development.We are associated with NASSCOM and ASCIII platform. </p>
-                    <a href="/embeddedFirmware" class="btn btn-primary text-center">See More</a>
+                    <h3>MOBILE APP DEVELOPMENT</h3>
+                    <p>Those with a creative flair and expertise in iOS, Android, Windows, Hybrid and Xamarin technologies<span id="dots">...</span><span id="more">
+                            have an exciting career opportunity in the area of mobile application and game development.We are associated with NASSCOM and ASCIII platform.</span></p>
+                      <button onclick="myFunction()" id="myBtn" class="btn btn-success">Read More... </button>
+                    
+                      <script src="{%static 'js/main.js' %}"></script>
                 </div>
             </div>
         </div>
@@ -44,11 +47,11 @@
             <div class="card" style="width: 18rem;">
                 <img src="https://source.unsplash.com/500x300/?code,html,Java" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">GRAPHICS AND WEB DESIGN</h5>
-                    <p class="card-text">Our graphics design and multimedia services portfolio includes 2D, 3D
-                        animation, Flash animation, prototype, and modelling. So whatever is your area of expertise,
-                        you can choose work accordingly as per design web applications.</p>
-                    <a href="/embeddedFirmware" class="btn btn-primary">See More</a>
+                    <h3>GRAPHICS AND WEB DESIGN</h3>
+                    <p>Our graphics design and multimedia services portfolio includes 2D, 3D animation, Flash <span id="dots2">...</span><span id="more2">
+                        animation, prototype, and modelling. So whatever is your area of expertise, you can choose work accordingly as per design web applications.</span></p>
+                            <button onclick="myFunction2()" id="myBtn2" class="btn btn-success">Read More... </button>
+                      <script src="{%static 'js/main2.js' %}"></script>
                 </div>
             </div>
         </div>
@@ -56,9 +59,11 @@
             <div class="card" style="width: 18rem;">
                 <img src="https://source.unsplash.com/500x300/?javascript" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">LaunchPad™ Development Kit</h5>
-                    <p class="card-text">Our microcontroller-based evaluation modules (LaunchPads) feature built-in emulators for programming & debugging, and start at just $9.99. Additionally, we offer a variety of hardware options to facilitate development with our Sitara ARM processors.</p>
-                    <a href="/embeddedFirmware" class="btn btn-primary">See More</a>
+                    <h3>LaunchPad™ Development Kit</h3>
+                    <p>Our microcontroller-based evaluation modules (LaunchPads) feature built-in emulators for<span id="dots3">...</span><span id="more3">
+                        programming & debugging, and start at just $9.99. Additionally, we offer a variety of hardware options to facilitate development with our Sitara ARM processors.</span></p>
+                            <button onclick="myFunction3()" id="myBtn3" class="btn btn-success">Read More... </button>
+                      <script src="{%static 'js/main3.js' %}"></script>
                 </div>
             </div>
         </div>
@@ -66,12 +71,11 @@
             <div class="card" style="width: 18rem;">
                 <img src="https://source.unsplash.com/500x300/?linx,web,chip" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Stack on BoosterPack™</h5>
-                    <p class="card-text">Application-specific BoosterPack™ plug-in modules allow you to explore a broad range of applications, including capacitive touch, wireless sensing, LED lighting control, and more.
-
-                        More than 80 BoosterPack modules from both Texas Instruments and third parties
-                        </p>
-                    <a href="/embeddedFirmware" class="btn btn-primary">See More</a>
+                    <h3>Stack on BoosterPack™</h3>
+                    <p>Application-specific BoosterPack™ plug-in modules allow you to explore a broad range <span id="dots4">...</span><span id="more4">
+                        of applications,including capacitive touch, wireless sensing, LED lighting control, and more. More than 80 BoosterPack modules from both Texas Instruments and third parties.</span></p>
+                            <button onclick="myFunction4()" id="myBtn4" class="btn btn-success">Read More... </button>
+                      <script src="{%static 'js/main4.js' %}"></script>
                 </div>
             </div>
         </div>
