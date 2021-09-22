@@ -10,6 +10,6 @@ urlpatterns = [
     path('contact/',views.contact,name='contact'),
     path('search/',views.search_view,name='search'),
     path('embeddedHardware/',views.embeddedHardware,name='embeddedHardware'),
-    path('embeddedFirmware/',views.embeddedFirmware,name='embeddedFardware'),
+    path('embeddedFirmware/',views.embeddedFirmware,name='embeddedFirmware'),
 
 ]

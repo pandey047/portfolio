@@ -9,13 +9,13 @@
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="{% static 'images/embedded3.jpeg' %}" alt="First slide">
+                <img class="d-block w-100" src="{% static 'images/embeddedf2.jpg' %}" alt="...">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="..." alt="Second slide">
+                <img class="d-block w-100" src="{% static 'images/embeddedf2.jpg' %}" alt="....">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="..." alt="Third slide">
+                <img class="d-block w-100" src="{% static 'images/embeddedf3.jpg' %}" alt="...">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -39,7 +39,10 @@
                 <div class="card-body">
                     <h3>Design a Custom Microcontroller Programming and Testing Board</h3>
                     <p>microcontroller looks the same as a nonfunctional one (or an empty IC package, for that
-                        matter)<span id="dots">...</span><span id="more"> This is why your board needs circuitry that allows you to confirm that the MCU is actually powered and properly executing code. The classic solution here is an LED or two; this type of visual feedback is limited but adequate in many cases.</span></p>
+                        matter)<span id="dots">...</span><span id="more"> This is why your board needs circuitry that
+                            allows you to confirm that the MCU is actually powered and properly executing code. The
+                            classic solution here is an LED or two; this type of visual feedback is limited but adequate
+                            in many cases.</span></p>
                     <button onclick="myFunction()" id="myBtn" class="btn btn-success">Read More... </button>
 
                     <script src="{%static 'js/main.js' %}"></script>
@@ -50,9 +53,12 @@
             <div class="card" style="width: 18rem;">
                 <img src="https://source.unsplash.com/500x300/?code,html,Java" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h3>High-Speed Waveform Generation with an MCU and a DAC</h3>
-                    <p>Our goal in this project is to determine the maximum rate at which we can update the DAC<span id="dots2">...</span><span id="more2">
-                        output.This information then leads us to considerations regarding the highest obtainable waveform frequency. The maximum frequency of the system is by no means amazing when compared to the capabilities of high-performance digital synthesis systems.</span></p>
+                    <h3>Waveform Generation with an MCU and a DAC</h3>
+                    <p>Our goal in this project is to determine the maximum rate at which we can update the DAC output.<span
+                            id="dots2">...</span><span id="more2">
+                            This information then leads us to considerations regarding the highest obtainable
+                            waveform frequency. The maximum frequency of the system is by no means amazing when compared
+                            to the capabilities of high-performance digital synthesis systems.</span></p>
                     <button onclick="myFunction2()" id="myBtn2" class="btn btn-success">Read More... </button>
                     <script src="{%static 'js/main2.js' %}"></script>
                 </div>
@@ -63,8 +69,14 @@
                 <img src="https://source.unsplash.com/500x300/?javascript" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h3>IT ESP-12F Programming</h3>
-                    <p>ESP8266 is a low-cost Wi-Fi-enabled microchip that you can program over a serial or Wi-Fi connection. Programming an ESP-12E / ESP-12F / NodeMCU over Wi-Fi <span id="dots3">...</span><span id="more3">
-                        is a Catch-22. The NodeMCU programming system uses the serial RTS and CTS lines to drive the reset and GPIO0 pins to set the programming mode. A couple of NPN transistors are used. When DTR is high and RTS low the Reset pin is pulled low. When DTR is low and RTS high GPIO0 is pulled low. The programming software drives the DTR and RTS pins as required to put the ESP12 in to flash mode.</span></p>
+                    <p>ESP8266 is a low-cost Wi-Fi-enabled microchip that you can program over a serial or Wi-Fi
+                        connection. Programming an ESP-12E / ESP-12F / NodeMCU over Wi-Fi <span
+                            id="dots3">...</span><span id="more3">
+                            is a Catch-22. The NodeMCU programming system uses the serial RTS and CTS lines to drive the
+                            reset and GPIO0 pins to set the programming mode. A couple of NPN transistors are used. When
+                            DTR is high and RTS low the Reset pin is pulled low. When DTR is low and RTS high GPIO0 is
+                            pulled low. The programming software drives the DTR and RTS pins as required to put the
+                            ESP12 in to flash mode.</span></p>
                     <button onclick="myFunction3()" id="myBtn3" class="btn btn-success">Read More... </button>
                     <script src="{%static 'js/main3.js' %}"></script>
                 </div>
@@ -76,8 +88,14 @@
                 <div class="card-body">
 
                     <h3>Implementations of the UEFI Framework</h3>
-                    <p>It is modular at every stage of the boot process; therefore, supporting a new device can be added individually with flexibility. During the debug phase,<span id="dots4">...</span><span id="more4">
-                        a new device driver can be loaded and tested separately without reprogramming the whole flash device. There is also a Dependency Expression Grammar in the core to allow modules to be loaded in the order decided by a dependency expression, instead of an order that is statically programmed. There are many other clever designs in the UEFI firmware stack..</span></p>
+                    <p>It is modular at every stage of the boot process; therefore, supporting a new device can be added
+                        individually with flexibility. During the debug phase,<span id="dots4">...</span><span
+                            id="more4">
+                            a new device driver can be loaded and tested separately without reprogramming the whole
+                            flash device. There is also a Dependency Expression Grammar in the core to allow modules to
+                            be loaded in the order decided by a dependency expression, instead of an order that is
+                            statically programmed. There are many other clever designs in the UEFI firmware
+                            stack..</span></p>
                     <button onclick="myFunction4()" id="myBtn4" class="btn btn-success">Read More... </button>
                     <script src="{%static 'js/main4.js' %}"></script>
                 </div>
